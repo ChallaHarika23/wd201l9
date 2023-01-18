@@ -40,7 +40,7 @@ describe("Todo test suite ", () => {
       title: "Buy milk",
       dueDate: new Date().toISOString(),
       completed: false,
-      _csrf: csrfTokens,
+      _csrf: csrfToken,
     });
     const gropuedTodosResponse = await agent
       .get("/")
